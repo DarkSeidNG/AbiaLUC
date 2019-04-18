@@ -6,10 +6,64 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:editTextColor">@color/text</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="actionMenuTextColor">@color/colorLink</item>
+        <item name="android:titleTextStyle">@color/colorAccent</item>
+        <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewLight</item>
+        <item name="android:dropDownItemStyle">@style/Widget.DropDownItemLight</item>
+        <item name="android:textColorHint">@color/colorBlue</item>
+        <item name="colorControlNormal">@color/colorBlue</item>
+        <item name="android:actionMenuTextColor">@color/colorLink</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
     </style>
 
+    <style name="ToolbarStyle" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <!-- Customize color of navigation drawer icon and back arrow -->
+        <item name="colorControlNormal">@color/colorLink</item>
+    </style>
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+
+    <style name="SweetButtons">
+        <item name="colorButtonNormal">@color/colorButton</item>
+    </style>
+
+    <style name="SweetBlueButtons">
+        <item name="colorButtonNormal">@color/colorBlue</item>
+    </style>
+    <style name="error_appearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <!--<item name="colorControlNormal">@color/colorAccent</item>-->
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AutoCompleteTextViewLight" parent="@android:style/Widget.AutoCompleteTextView">
+        <item name="android:textColor">@android:color/background_light</item>
+    </style>
+
+    <style name="Widget.DropDownItemLight" parent="@android:style/Widget.DropDownItem">
+        <item name="android:textColor">@android:color/holo_blue_light</item>
+    </style>
+
+    <declare-styleable name="RippleBackground">
+        <attr name="rb_color" format="color" />
+        <attr name="rb_strokeWidth" format="dimension"/>
+        <attr name="rb_radius" format="dimension"/>
+        <attr name="rb_duration" format="integer"/>
+        <attr name="rb_rippleAmount" format="integer"/>
+        <attr name="rb_scale" format="float"/>
+        <attr name="rb_type" format="enum">
+            <enum name="fillRipple" value="0"/>
+            <enum name="strokeRipple" value="1"/>
+        </attr>
+    </declare-styleable>
 </resources>
